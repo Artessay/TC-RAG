@@ -1,0 +1,16 @@
+dashscope==1.20.3
+diskcache==5.6.3
+Flask==3.0.3
+Flask_Compress==1.15
+Flask_Cors==4.0.1
+json5==0.9.25
+langchain_community==0.2.11
+langchain_openai==0.1.20
+modelscope==1.17.0
+openai==1.40.3
+peft==0.12.0
+python-dotenv==1.0.1
+Requests==2.32.3
+spacy==3.7.5
+torch==2.4.0
+transformers==4.44.0
