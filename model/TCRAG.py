@@ -438,6 +438,6 @@ if __name__ == '__main__':
     args = get_args()
     args.model_name = "Qwen"
 
-    agent = SAMA(args)
+    agent = TCRAG(args)
     reponse = agent.inference("如何用python实现一个简单的栈？")
     print(reponse)
