@@ -13,8 +13,8 @@ In the pursuit of enhancing medical Large Language Models (LLMs), Retrieval-Augm
 ## Install Environment
 
 ```sh
-conda create -n StackAgent python=3.11 -y
-conda activate StackAgent
+conda create -n TCRAG python=3.11 -y
+conda activate TCRAG
 pip install -r requirements.txt
 python -m spacy download zh_core_web_trf
 ```

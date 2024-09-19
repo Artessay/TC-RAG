@@ -87,7 +87,7 @@ Final Answer是你的答案，且Final Answer必须详尽且有意义
 """
 
 
-class SAMA(Base):
+class TCRAG(Base):
     def __init__(self, args) -> None:
         super().__init__(args)
         
@@ -228,23 +228,33 @@ class SAMA(Base):
         now_attentions = call_results["attentions"]  # N*1的attention
         now_entropies = call_results["entropies"]  # N*1的熵
         now_logprobs = call_results["logprobs"]  # N*1，代表每个token的概率
-        now_logits = call_results["logits"]  # N*N，代表每个token的概率
+        now_logits = call_results["logits"]  # N*1，代表每个token的概率
 
-        span_start = -1
-        if "Thought" in new_response:
-            new_response = new_response.replace("Thought:", "")
-            span_start = 2 # TODO: find
-        if "Final Answer" in new_response:
-            new_response = new_response.replace("Final Answer:", "")
-            span_start = 3
+        # 寻找正确的token对应的内容
+        response_tokens = call_results["tokens"]  # 获取所有结果的token
+        span_start = 0
+        for i in range(len(response_tokens) - 3):
+            current_token = response_tokens[i]
+            print(current_token)
+            if current_token == 'Thought':
+                span_start = i + 2
+                break
+            elif current_token == 'Final':
+                next_token = response_tokens[i + 1]
+                if next_token == 'Answer':
+                    span_start = i + 3
+                break
 
-        # TODO：token未对齐！
-        if span_start == -1:            # 异常控制，避免找不到
+        # debug use
+        # print(span_start)
+        # print(response_tokens[span_start:])
+
+        if span_start >= len(response_tokens) - 1:  # 异常控制，避免找不到
             self.now_attentions = now_attentions
             self.now_entropies = now_entropies
             self.now_logprobs = now_logprobs
             self.now_logits = now_logits
-        else:                           # 能找到，直接取栈顶
+        else:  # 能找到，直接取栈顶
             self.now_attentions = now_attentions[span_start:]
             self.now_entropies = now_entropies[span_start:]
             self.now_logprobs = now_logprobs[span_start:]
