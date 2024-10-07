@@ -23,6 +23,31 @@ pip install -r requirements.txt
 python -m spacy download zh_core_web_trf
 ```
 
+## Folder Structure
+
+The important data structure are as follows:
+
+```tex
+└── code-and-data
+    ├── data                    # Including datasets-CMB, Clin and MMCU
+    ├── model                   # The core source code of our model TC-RAG and baselines
+    │   |──  _init_.py          # Initialization file for models
+    │   |──  system_score.py    # Including score computation code in TC-RAG   
+    │   |──  other-model.py     # Including the base model and other RAG methods 
+    ├── structure_data          # Contains Euclidean structure by one-hot or d2c 
+    ├── microservice            # Defination the microservice code
+    │   |──  _init_.py          # Initialization file for microservice
+    │   |──  BingSearch.py      # BingSearch Tool, remember to register to get your API    
+    │   |──  DocumentSearch.py  # DocumentSearch tool
+    │   |──  Generator.py       # This is the TC-RAG-specific code for generate logits, attention, and entropy when inference...
+    │   |──  CustomLanguageModel# Your Custom Language Model 
+    │   |──  config.py          # Path for your local LLMs' paths and your LoRA weight
+    ├── mian.py                 # This is the main file
+    ├── requirements.txt        # The python environment needed for TC-RAG
+    └── README.md               # This document
+```
+
+
 ## Setup Basic Config for Large Language Model
 
 TC-RAG mainly supports Large Language Models Qwen, which is a series of transformer-based large language models by Alibaba Cloud.
