@@ -2,6 +2,7 @@
 
 Welcome to the official GitHub repository for TC-RAG (Turing-Complete RAG)!
 
+This is the official code for paper: **TC-RAG:Turing-Complete RAG's Case study on Medical LLM Systems** (https://arxiv.org/abs/2408.09199)
 
 
 ## Overview
@@ -56,3 +57,16 @@ The following table lists all the available arguments, their default values and 
 | `--module_name`     | `Base`       | `Base`, `CoT`, `Sure`, `BasicRAG`, `TokenRAG`, `EntityRAG`, `SentenceRAG`, `TCRAG`
 | `--model_name`      | `Qwen` | `Qwen`(used for local LLM), `Aliyun`(used for cloud LLM), `Xiaobei`(used for finetuned LLM)
 | `--dataset_name`    | `CMB` | `CMB`, `MMCU`, `Clin`
+
+## Citation
+```sh
+@misc{jiang2024tcragturingcompleteragscasestudy,
+      title={TC-RAG:Turing-Complete RAG's Case study on Medical LLM Systems}, 
+      author={Xinke Jiang and Yue Fang and Rihong Qiu and Haoyu Zhang and Yongxin Xu and Hao Chen and Wentao Zhang and Ruizhe Zhang and Yuchen Fang and Xu Chu and Junfeng Zhao and Yasha Wang},
+      year={2024},
+      eprint={2408.09199},
+      archivePrefix={arXiv},
+      primaryClass={cs.IR},
+      url={https://arxiv.org/abs/2408.09199}, 
+}
+```
