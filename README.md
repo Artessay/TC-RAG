@@ -95,3 +95,16 @@ The following table lists all the available arguments, their default values and 
       url={https://arxiv.org/abs/2408.09199}, 
 }
 ```
+
+The code and datasets for HyKGE (HyKGE: A Hypothesis Knowledge Graph Enhanced Framework for Accurate and Reliable Medical LLMs Responses, https://arxiv.org/abs/2312.15883) will be released in this repo, the citation is as follows:
+```sh
+@misc{jiang2024hykgehypothesisknowledgegraph,
+      title={HyKGE: A Hypothesis Knowledge Graph Enhanced Framework for Accurate and Reliable Medical LLMs Responses}, 
+      author={Xinke Jiang and Ruizhe Zhang and Yongxin Xu and Rihong Qiu and Yue Fang and Zhiyuan Wang and Jinyi Tang and Hongxin Ding and Xu Chu and Junfeng Zhao and Yasha Wang},
+      year={2024},
+      eprint={2312.15883},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2312.15883}, 
+}
+```
