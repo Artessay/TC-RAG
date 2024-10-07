@@ -82,6 +82,9 @@ The following table lists all the available arguments, their default values and 
 | `--model_name`      | `Qwen` | `Qwen`(used for local LLM), `Aliyun`(used for cloud LLM), `Xiaobei`(used for finetuned LLM)
 | `--dataset_name`    | `CMB` | `CMB`, `MMCU`, `Clin`
 
+## Contact
+For any questions or suggestions, please contact (Rihong Qiu:rihongqiu@pku.stu.edu.com) and (Xinke Jiang:xinkejiang@pku.stu.edu.com).
+
 ## Citation
 ```tex
 @misc{jiang2024tcragturingcompleteragscasestudy,
