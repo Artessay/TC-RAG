@@ -34,7 +34,6 @@ The important data structure are as follows:
     │   |──  _init_.py          # Initialization file for models
     │   |──  system_score.py    # Including score computation code in TC-RAG   
     │   |──  other-model.py     # Including the base model and other RAG methods 
-    ├── structure_data          # Contains Euclidean structure by one-hot or d2c 
     ├── microservice            # Defination the microservice code
     │   |──  _init_.py          # Initialization file for microservice
     │   |──  BingSearch.py      # BingSearch Tool, remember to register to get your API    
