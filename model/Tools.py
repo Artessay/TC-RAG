@@ -12,7 +12,7 @@ from typing import Dict, List
 - https://serper.dev/dashboard
 """
 
-rag_host = '123.57.228.132'
+rag_host = 'localhost'
 rag_port = 63863
 
 class Tools:

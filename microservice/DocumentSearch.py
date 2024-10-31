@@ -2,7 +2,7 @@ import spacy
 from diskcache import Cache
 from multiprocessing.connection import Client
 
-doc_rag_host = '123.57.228.132'
+doc_rag_host = 'localhost'
 doc_rag_port = 63863
 
 class DocumentSearch():
