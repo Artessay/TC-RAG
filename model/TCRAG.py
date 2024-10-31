@@ -263,7 +263,7 @@ class TCRAG(Base):
     def pop_message(self, ):
         if "Backtrack" in self.top_message():
             Backtrack_info = self.message_list.pop()
-            Backtrack_info += '请重新思考，或改写工具调用的方式和输入参数得。'
+            Backtrack_info += '请重新思考，或改写工具调用的方式和输入参数'
             # 当检索到回撤Backtrack关键词时，去除Thought / Action=>Observation 的栈
             if "Observation" in self.top_message():
                 self.message_list.pop()     # pop observation
