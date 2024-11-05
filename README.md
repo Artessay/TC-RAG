@@ -83,7 +83,7 @@ The following table lists all the available arguments, their default values and 
 | `--dataset_name`    | `CMB` | `CMB`, `MMCU`, `Clin`
 
 ## Contact
-For any questions or suggestions, please contact (Rihong Qiu:rihongqiu@pku.stu.edu.com) and (Xinke Jiang:xinkejiang@pku.stu.edu.com).
+For any questions or suggestions, please contact (Rihong Qiu:rihongqiu@stu.pku.edu.com) and (Xinke Jiang:xinkejiang@stu.pku.edu.com).
 
 ## Citation
 ```tex
