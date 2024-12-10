@@ -41,7 +41,7 @@ The important data structure are as follows:
     │   |──  Generator.py       # This is the TC-RAG-specific code for generate logits, attention, and entropy when inference...
     │   |──  CustomLanguageModel# Your Custom Language Model 
     │   |──  config.py          # Path for your local LLMs' paths and your LoRA weight
-    ├── mian.py                 # This is the main file
+    ├── main.py                 # This is the main file
     ├── requirements.txt        # The python environment needed for TC-RAG
     └── README.md               # This document
 ```
