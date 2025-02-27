@@ -82,31 +82,4 @@ The following table lists all the available arguments, their default values and 
 | `--model_name`      | `Qwen` | `Qwen`(used for local LLM), `Aliyun`(used for cloud LLM), `Xiaobei`(used for finetuned LLM)
 | `--dataset_name`    | `CMB` | `CMB`, `MMCU`, `Clin`
 
-## Contact
-For any questions or suggestions, please contact (Rihong Qiu:rihongqiu@stu.pku.edu.cn) and (Xinke Jiang:xinkejiang@stu.pku.edu.cn).
 
-## Citation
-```tex
-@misc{jiang2024tcragturingcompleteragscasestudy,
-      title={TC-RAG:Turing-Complete RAG's Case study on Medical LLM Systems}, 
-      author={Xinke Jiang and Yue Fang and Rihong Qiu and Haoyu Zhang and Yongxin Xu and Hao Chen and Wentao Zhang and Ruizhe Zhang and Yuchen Fang and Xu Chu and Junfeng Zhao and Yasha Wang},
-      year={2024},
-      eprint={2408.09199},
-      archivePrefix={arXiv},
-      primaryClass={cs.IR},
-      url={https://arxiv.org/abs/2408.09199}, 
-}
-```
-
-The code and datasets for HyKGE (HyKGE: A Hypothesis Knowledge Graph Enhanced Framework for Accurate and Reliable Medical LLMs Responses, https://arxiv.org/abs/2312.15883) will be released in this repo, the citation is as follows:
-```tex
-@misc{jiang2024hykgehypothesisknowledgegraph,
-      title={HyKGE: A Hypothesis Knowledge Graph Enhanced Framework for Accurate and Reliable Medical LLMs Responses}, 
-      author={Xinke Jiang and Ruizhe Zhang and Yongxin Xu and Rihong Qiu and Yue Fang and Zhiyuan Wang and Jinyi Tang and Hongxin Ding and Xu Chu and Junfeng Zhao and Yasha Wang},
-      year={2024},
-      eprint={2312.15883},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2312.15883}, 
-}
-```

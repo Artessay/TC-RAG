@@ -171,11 +171,10 @@ class LoraGenerator(BasicGenerator):
         
 
 if __name__ == "__main__":
-    # model = BasicGenerator("Qwen/Qwen2-7B-Instruct")
-    # model = BasicGenerator("/home/qrh/data/model/Qwen/Qwen1.5-32B-Chat")
+    # model = BasicGenerator("Qwen/Qwen2.5-7B-Instruct")
     model = LoraGenerator(
-        "/home/qrh/data/model/Qwen/Qwen1.5-32B-Chat",
-        "/home/qrh/data/model/Qwen/Qwen1.5-32B-Chat-lora-medical"
+        "Qwen/Qwen2.5-7B-Instruct",
+        "Qwen/Qwen2.5-7B-Instruct-Lora"
     )
 
     # prompt = "What is the capital of France?"
